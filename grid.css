@@ -1,0 +1,92 @@
+/* A Simple Responsive Grid For Your Everyday Use http://codelittle.com/little-grid/  */
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.row {
+    width: 100%;
+    min-width: 320px; /* Minimum Width */
+    max-width: 1120px; /* Maximum Width */
+	padding: 0;
+    margin: 0 auto;
+}
+
+/* the following makes the grid nestable */
+.row .row {
+	margin-left: -10px;
+	margin-right: -10px;
+	max-width: none;
+	width: auto;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[class*='large-'],
+[class*='medium-'] {
+  float: left;
+  margin: 0;
+  padding: 10px;
+}
+
+/* medium grid */
+.medium-1, [class*='large-'].medium-1 { width: 8.33333%; }
+.medium-2, [class*='large-'].medium-2 { width: 16.66667%; }
+.medium-3, [class*='large-'].medium-3 { width: 25%; }
+.medium-4, [class*='large-'].medium-4 { width: 33.33333%; }
+.medium-5, [class*='large-'].medium-5 { width: 41.66667%; }
+.medium-6, [class*='large-'].medium-6 { width: 50%; }
+.medium-7, [class*='large-'].medium-7 { width: 58.33333%; }
+.medium-8, [class*='large-'].medium-8 { width: 66.66667%; }
+.medium-9, [class*='large-'].medium-9 { width: 75%; }
+.medium-10, [class*='large-'].medium-10 { width: 83.33333%; }
+.medium-11, [class*='large-'].medium-11 { width: 91.66667%; }
+.medium-12, [class*='large-'].medium-12 { width: 100%; }
+
+@media (min-width: 840px) {
+	/* breakpoint for large grid */
+	.large-1, [class*='medium-'].large-1 { width: 8.33333%; }
+	.large-2, [class*='medium-'].large-2 { width: 16.66667%; }
+	.large-3, [class*='medium-'].large-3 { width: 25%; }
+	.large-4, [class*='medium-'].large-4 { width: 33.33333%; }
+	.large-5, [class*='medium-'].large-5 { width: 41.66667%; }
+	.large-6, [class*='medium-'].large-6 { width: 50%; }
+	.large-7, [class*='medium-'].large-7 { width: 58.33333%; }
+	.large-8, [class*='medium-'].large-8 { width: 66.66667%; }
+	.large-9, [class*='medium-'].large-9 { width: 75%; }
+	.large-10, [class*='medium-'].large-10 { width: 83.33333%; }
+	.large-11, [class*='medium-'].large-11 { width: 91.66667%; }
+	.large-12, [class*='medium-'].large-12 { width: 100%; }
+}
+
+@media (max-width: 420px) {
+	/* breakpoint for small grid */
+	/* cheating a little by calling columns with .row */
+    .row .large-1, .row .medium-1,
+    .row .large-2, .row .medium-2,
+    .row .large-3, .row .medium-3,
+    .row .large-4, .row .medium-4,
+    .row .large-5, .row .medium-5,
+    .row .large-6, .row .medium-6,
+    .row .large-7, .row .medium-7,
+    .row .large-8, .row .medium-8,
+    .row .large-9, .row .medium-9,
+    .row .large-10, .row .medium-10,
+    .row .large-11, .row .medium-11,
+    .row .large-12, .row .medium-12 {
+        width: 100%;
+    }
+}
+
+/* We don't want the images to stick out, do we? */
+img {
+    max-width: 100%;
+    height: auto;
+}
