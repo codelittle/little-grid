@@ -5,21 +5,29 @@
 	
 	<style type="text/css" media="screen">
 	
-		h1 {
+		body {
 			font-family: sans-serif;
+			background: #fff;
+		}
+	
+		h1 {
 			font-size: 24px;
 			text-align: center;
 		}
 		
+		h2 {
+			font-size: 18px;
+			text-align: left;
+		}
+		
 		[class*='large-'] span,
-		[class*='medium-'] span {
+		[class*='columns-'] span {
 			display: block;
-			padding: 10px;
-			background: #eee;
-			font-size: 11px;
-			font-family: sans-serif;
+			padding: 10px 0;
+			background: #71b7e6;
+			font-size: 10px;
 			font-weight: bold;
-			color: #888;
+			color: #fff;
 			text-align: center;
 		}
 	</style>
@@ -30,110 +38,104 @@
 	<h1>Grid Test</h1>
 	
 	<div class="row">
-		<div class="large-12 medium12">
-			<h1>Welcome Page</h1>
-		</div>
+		<div class="columns-2 large-1"><span>col-2 lg-1</span></div>
+		<div class="columns-2 large-1"><span>col-2 lg-1</span></div>
+		<div class="columns-2 large-1"><span>col-2 lg-1</span></div>
+		<div class="columns-2 large-1"><span>col-2 lg-1</span></div>
+		<div class="columns-2 large-1"><span>col-2 lg-1</span></div>
+		<div class="columns-2 large-1"><span>col-2 lg-1</span></div>
+		<div class="columns-2 large-1"><span>col-2 lg-1</span></div>
+		<div class="columns-2 large-1"><span>col-2 lg-1</span></div>
+		<div class="columns-2 large-1"><span>col-2 lg-1</span></div>
+		<div class="columns-2 large-1"><span>col-2 lg-1</span></div>
+		<div class="columns-2 large-1"><span>col-2 lg-1</span></div>
+		<div class="columns-2 large-1"><span>col-2 lg-1</span></div>
 	</div>
 	
 	<div class="row">
-		<div class="large-1 medium-2"><span>lg-1 md-2</span></div>
-		<div class="large-1 medium-2"><span>lg-1 md-2</span></div>
-		<div class="large-1 medium-2"><span>lg-1 md-2</span></div>
-		<div class="large-1 medium-2"><span>lg-1 md-2</span></div>
-		<div class="large-1 medium-2"><span>lg-1 md-2</span></div>
-		<div class="large-1 medium-2"><span>lg-1 md-2</span></div>
-		<div class="large-1 medium-2"><span>lg-1 md-2</span></div>
-		<div class="large-1 medium-2"><span>lg-1 md-2</span></div>
-		<div class="large-1 medium-2"><span>lg-1 md-2</span></div>
-		<div class="large-1 medium-2"><span>lg-1 md-2</span></div>
-		<div class="large-1 medium-2"><span>lg-1 md-2</span></div>
-		<div class="large-1 medium-2"><span>lg-1 md-2</span></div>
+		<div class="columns-4 large-2"><span>columns-4 large-2</span></div>
+		<div class="columns-4 large-2"><span>columns-4 large-2</span></div>
+		<div class="columns-4 large-2"><span>columns-4 large-2</span></div>
+		<div class="columns-4 large-2"><span>columns-4 large-2</span></div>
+		<div class="columns-4 large-2"><span>columns-4 large-2</span></div>
+		<div class="columns-4 large-2"><span>columns-4 large-2</span></div>
 	</div>
 	
 	<div class="row">
-		<div class="large-2 medium-4"><span>large-2 medium-4</span></div>
-		<div class="large-2 medium-4"><span>large-2 medium-4</span></div>
-		<div class="large-2 medium-4"><span>large-2 medium-4</span></div>
-		<div class="large-2 medium-4"><span>large-2 medium-4</span></div>
-		<div class="large-2 medium-4"><span>large-2 medium-4</span></div>
-		<div class="large-2 medium-4"><span>large-2 medium-4</span></div>
+		<div class="columns-6 large-3"><span>columns-6 large-3</span></div>
+		<div class="columns-6 large-3"><span>columns-6 large-3</span></div>
+		<div class="columns-6 large-3"><span>columns-6 large-3</span></div>
+		<div class="columns-6 large-3"><span>columns-6 large-3</span></div>
 	</div>
 	
 	<div class="row">
-		<div class="large-3 medium-6"><span>large-3 medium-6</span></div>
-		<div class="large-3 medium-6"><span>large-3 medium-6</span></div>
-		<div class="large-3 medium-6"><span>large-3 medium-6</span></div>
-		<div class="large-3 medium-6"><span>large-3 medium-6</span></div>
+		<div class="columns-12 large-6"><span>columns-12 large-6</span></div>
+		<div class="columns-12 large-6"><span>columns-12 large-6</span></div>
 	</div>
 	
 	<div class="row">
-		<div class="large-6 medium-12"><span>large-6 md-12</span></div>
-		<div class="large-6 medium-12"><span>large-6 md-12</span></div>
+		<div class="columns-6 large-6"><span>columns-6 large-6</span></div>
+		<div class="columns-6 large-6"><span>columns-6 large-6</span></div>
 	</div>
 	
 	<div class="row">
-		<div class="large-6 medium-6"><span>large-6 medium-6</span></div>
-		<div class="large-6 medium-6"><span>large-6 medium-6</span></div>
+		<div class="columns-7 large-5"><span>columns-5 large-5</span></div>
+		<div class="columns-5 large-7"><span>columns-7 large-7</span></div>
 	</div>
 	
 	<div class="row">
-		<div class="large-5 medium-7"><span>large-5 medium-5</span></div>
-		<div class="large-7 medium-5"><span>large-7 medium-7</span></div>
+		<div class="columns-8 large-4"><span>columns-4 large-4</span></div>
+		<div class="columns-4 large-8"><span>columns-9 large-8</span></div>
 	</div>
 	
 	<div class="row">
-		<div class="large-4 medium-8"><span>large-4 medium-4</span></div>
-		<div class="large-8 medium-4"><span>large-8 medium-9</span></div>
+		<div class="columns-9 large-3"><span>columns-3 large-3</span></div>
+		<div class="columns-3 large-9"><span>columns-9 large-9</span></div>
 	</div>
 	
 	<div class="row">
-		<div class="large-3 medium-9"><span>large-3 medium-3</span></div>
-		<div class="large-9 medium-3"><span>large-9 medium-9</span></div>
+		<div class="columns-10 large-2"><span>col-2 lg-2</span></div>
+		<div class="columns-2 large-10"><span>col-10 lg-10</span></div>
 	</div>
 	
 	<div class="row">
-		<div class="large-2 medium-10"><span>large-2 md-2</span></div>
-		<div class="large-10 medium-2"><span>lg-10 md-10</span></div>
-	</div>
-	
-	<div class="row">
-		<div class="large-1 medium-11"><span>lg-1 md-11</span></div>
-		<div class="large-11 medium-1"><span>lg-11 md-1</span></div>
+		<div class="columns-11 large-1"><span>col-11 lg-1</span></div>
+		<div class="columns-1 large-11"><span>col-1 lg-11</span></div>
 	</div>
 	
 	<div class="row">
 		<div class="large-12">
 			<div class="row">
-				<div class="medium-12">
+				<div class="columns-12">
 					<h1>Nested Grid</h1>
 				</div>
 			</div>
 			<div class="row">
-				<div class="large-6 medium-12">
+				<div class="large-6 columns-12">
 					<div class="row">
-						<div class="medium-12">
-							<h1>large-6 medium-12</h1>
+						<div class="columns-12">
+							<h2>columns-12 large-6</h2>
 						</div>
 					</div>
 					<div class="row">
-						<div class="large-3 medium-6"><span>large-3 medium-6</span></div>
-						<div class="large-3 medium-6"><span>large-3 medium-6</span></div>
-						<div class="large-3 medium-6"><span>large-3 medium-6</span></div>
-						<div class="large-3 medium-6"><span>large-3 medium-6</span></div>
+						<div class="columns-6 large-3"><span>columns-6 large-3</span></div>
+						<div class="columns-6 large-3"><span>columns-6 large-3</span></div>
+						<div class="columns-6 large-3"><span>columns-6 large-3</span></div>
+						<div class="columns-6 large-3"><span>columns-6 large-3</span></div>
 					</div>
 				</div>
 				
-				<div class="large-6 medium-12">
+				<div class="large-6 columns-12">
 					<div class="row">
-						<div class="medium-12">
-							<h1>large-6 medium-12</h1>
+						<div class="columns-12">
+							<h2>columns-12 large-6</h2>
 						</div>
 					</div>
 					<div class="row">
-						<div class="large-3 medium-6"><span>large-3 medium-6</span></div>
-						<div class="large-3 medium-6"><span>large-3 medium-6</span></div>
-						<div class="large-3 medium-6"><span>large-3 medium-6</span></div>
-						<div class="large-3 medium-6"><span>large-3 medium-6</span></div>
+						<div class="columns-6 large-3"><span>columns-6 large-3</span></div>
+						<div class="columns-6 large-3"><span>columns-6 large-3</span></div>
+						<div class="columns-6 large-3"><span>columns-6 large-3</span></div>
+						<div class="columns-6 large-3"><span>columns-6 large-3</span></div>
 					</div>
 				</div>
 				
